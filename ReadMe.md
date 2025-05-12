@@ -1,0 +1,1 @@
+this is a project about student details in school
