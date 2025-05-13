@@ -21,7 +21,7 @@ class Student(models.Model):
         ]
     )
     Semester = models.PositiveSmallIntegerField(default=0)
-    StudentID = models.PositiveIntegerField()
+    Address = models.URLField(null=True, blank=True)
     AdmissionNumber = models.PositiveIntegerField( validators = [
         MinValueValidator(1000, message="Value must be ≥ 1000"),
         MaxValueValidator(5000, message="Value must be ≤ 5000"),
