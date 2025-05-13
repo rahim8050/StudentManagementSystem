@@ -1,3 +1,6 @@
+from django.urls import path  # Add this line
+from .views import Login, RegisterUser, Logout
+
 urlpatterns = [
 path("login/",Login.as_view(),name="login"),
 path("register/",RegisterUser.as_view(),name="register"),
